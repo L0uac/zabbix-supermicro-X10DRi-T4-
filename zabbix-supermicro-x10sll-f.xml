@@ -9,8 +9,8 @@
     </groups>
     <templates>
         <template>
-            <template>IPMI Supermicro X10SLL-F</template>
-            <name>IPMI Supermicro X10SLL-F</name>
+            <template>IPMI Supermicro X10DRi-T4+</template>
+            <name>IPMI Supermicro X10DRi-T4+</name>
             <description/>
             <groups>
                 <group>
@@ -119,12 +119,55 @@
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>Fan 3 Speed</name>
+                    <name>Fan 6 Speed</name>
                     <type>12</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>ipmi.fans.fan3</key>
+                    <key>ipmi.fans.fan6</key>
+                    <delay>15</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>RPM</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor>FAN3</ipmi_sensor>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Fans</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>Fan A Speed</name>
+                    <type>12</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>ipmi.fans.fana</key>
                     <delay>15</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -248,12 +291,12 @@
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>CPU Temp</name>
+                    <name>CPU1 Temp</name>
                     <type>12</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>ipmi.temp.cpu</key>
+                    <key>ipmi.temp.cpu1</key>
                     <delay>15</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -291,12 +334,55 @@
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>RAM1 Temp</name>
+                    <name>CPU2 Temp</name>
                     <type>12</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>ipmi.temp.dimm1a</key>
+                    <key>ipmi.temp.cpu2</key>
+                    <delay>15</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>°c</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor>CPU Temp</ipmi_sensor>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Temperatures</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>DIMMA1 Temp</name>
+                    <type>12</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>ipmi.temp.dimma1</key>
                     <delay>15</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -334,7 +420,7 @@
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>RAM2 Temp</name>
+                    <name>DIMMA2 Temp</name>
                     <type>12</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
@@ -343,7 +429,7 @@
                     <delay>15</delay>
                     <history>90</history>
                     <trends>365</trends>
-                    <status>0</status>
+                    <status>1</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>°c</units>
@@ -377,7 +463,50 @@
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>RAM3 Temp</name>
+                    <name>DIMMA3 Temp</name>
+                    <type>12</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>ipmi.temp.dimma3</key>
+                    <delay>15</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>1</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>°c</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor>P1-DIMMA3 Temp</ipmi_sensor>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Temperatures</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>DIMMB1 Temp</name>
                     <type>12</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
@@ -420,7 +549,7 @@
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>RAM4 Temp</name>
+                    <name>DIMMB2 Temp</name>
                     <type>12</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
@@ -429,7 +558,7 @@
                     <delay>15</delay>
                     <history>90</history>
                     <trends>365</trends>
-                    <status>0</status>
+                    <status>1</status>
                     <value_type>3</value_type>
                     <allowed_hosts/>
                     <units>°c</units>
@@ -445,6 +574,952 @@
                     <delay_flex/>
                     <params/>
                     <ipmi_sensor>P1-DIMMB2 Temp</ipmi_sensor>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Temperatures</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>DIMMB3 Temp</name>
+                    <type>12</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>ipmi.temp.dimmb3</key>
+                    <delay>15</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>1</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>°c</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor>P1-DIMMB3 Temp</ipmi_sensor>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Temperatures</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>DIMMC1 Temp</name>
+                    <type>12</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>ipmi.temp.dimmc1</key>
+                    <delay>15</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>1</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>°c</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor>P1-DIMMC1 Temp</ipmi_sensor>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Temperatures</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>DIMMC2 Temp</name>
+                    <type>12</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>ipmi.temp.dimmc2</key>
+                    <delay>15</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>1</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>°c</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor>P1-DIMMC2 Temp</ipmi_sensor>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Temperatures</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>DIMMC3 Temp</name>
+                    <type>12</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>ipmi.temp.dimmc3</key>
+                    <delay>15</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>1</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>°c</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor>P1-DIMMC3 Temp</ipmi_sensor>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Temperatures</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>DIMMD1 Temp</name>
+                    <type>12</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>ipmi.temp.dimmd1</key>
+                    <delay>15</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>1</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>°c</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor>P1-DIMMD1 Temp</ipmi_sensor>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Temperatures</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>DIMMD2 Temp</name>
+                    <type>12</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>ipmi.temp.dimmd2</key>
+                    <delay>15</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>1</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>°c</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor>P1-DIMMD2 Temp</ipmi_sensor>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Temperatures</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>DIMMD3 Temp</name>
+                    <type>12</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>ipmi.temp.dimmd3</key>
+                    <delay>15</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>1</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>°c</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor>P1-DIMMD3 Temp</ipmi_sensor>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Temperatures</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>DIMME1 Temp</name>
+                    <type>12</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>ipmi.temp.dimme1</key>
+                    <delay>15</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>1</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>°c</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor>P1-DIMME1 Temp</ipmi_sensor>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Temperatures</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>DIMME2 Temp</name>
+                    <type>12</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>ipmi.temp.dimme2</key>
+                    <delay>15</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>1</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>°c</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor>P1-DIMME2 Temp</ipmi_sensor>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Temperatures</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>DIMME3 Temp</name>
+                    <type>12</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>ipmi.temp.dimme3</key>
+                    <delay>15</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>1</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>°c</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor>P1-DIMME3 Temp</ipmi_sensor>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Temperatures</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>DIMMF1 Temp</name>
+                    <type>12</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>ipmi.temp.dimmf1</key>
+                    <delay>15</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>1</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>°c</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor>P1-DIMMF1 Temp</ipmi_sensor>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Temperatures</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>DIMMF2 Temp</name>
+                    <type>12</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>ipmi.temp.dimmf2</key>
+                    <delay>15</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>1</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>°c</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor>P1-DIMMF2 Temp</ipmi_sensor>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Temperatures</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>DIMMF3 Temp</name>
+                    <type>12</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>ipmi.temp.dimmf3</key>
+                    <delay>15</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>1</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>°c</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor>P1-DIMMF3 Temp</ipmi_sensor>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Temperatures</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>DIMMF1 Temp</name>
+                    <type>12</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>ipmi.temp.dimmf1</key>
+                    <delay>15</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>1</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>°c</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor>P1-DIMMF1 Temp</ipmi_sensor>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Temperatures</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>DIMMF2 Temp</name>
+                    <type>12</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>ipmi.temp.dimmf2</key>
+                    <delay>15</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>1</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>°c</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor>P1-DIMMF2 Temp</ipmi_sensor>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Temperatures</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>DIMMF3 Temp</name>
+                    <type>12</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>ipmi.temp.dimmf3</key>
+                    <delay>15</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>1</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>°c</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor>P1-DIMMF3 Temp</ipmi_sensor>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Temperatures</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>DIMMG1 Temp</name>
+                    <type>12</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>ipmi.temp.dimmg1</key>
+                    <delay>15</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>1</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>°c</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor>P1-DIMMG1 Temp</ipmi_sensor>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Temperatures</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>DIMMG2 Temp</name>
+                    <type>12</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>ipmi.temp.dimmg2</key>
+                    <delay>15</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>1</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>°c</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor>P1-DIMMG2 Temp</ipmi_sensor>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Temperatures</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>DIMMG3 Temp</name>
+                    <type>12</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>ipmi.temp.dimmg3</key>
+                    <delay>15</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>1</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>°c</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor>P1-DIMMG3 Temp</ipmi_sensor>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Temperatures</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>DIMMH1 Temp</name>
+                    <type>12</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>ipmi.temp.dimmh1</key>
+                    <delay>15</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>1</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>°c</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor>P1-DIMMH1 Temp</ipmi_sensor>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Temperatures</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>DIMMH2 Temp</name>
+                    <type>12</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>ipmi.temp.dimmh2</key>
+                    <delay>15</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>1</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>°c</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor>P1-DIMMH2 Temp</ipmi_sensor>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Temperatures</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>DIMMH3 Temp</name>
+                    <type>12</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>ipmi.temp.dimmh3</key>
+                    <delay>15</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>1</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units>°c</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor>P1-DIMMH3 Temp</ipmi_sensor>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
@@ -721,49 +1796,6 @@
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>3.3V Aux Voltage</name>
-                    <type>12</type>
-                    <snmp_community/>
-                    <multiplier>0</multiplier>
-                    <snmp_oid/>
-                    <key>ipmi.volts.33vaux</key>
-                    <delay>15</delay>
-                    <history>90</history>
-                    <trends>365</trends>
-                    <status>0</status>
-                    <value_type>0</value_type>
-                    <allowed_hosts/>
-                    <units>v</units>
-                    <delta>0</delta>
-                    <snmpv3_contextname/>
-                    <snmpv3_securityname/>
-                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
-                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
-                    <snmpv3_authpassphrase/>
-                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
-                    <snmpv3_privpassphrase/>
-                    <formula>1</formula>
-                    <delay_flex/>
-                    <params/>
-                    <ipmi_sensor>3.3V AUX</ipmi_sensor>
-                    <data_type>0</data_type>
-                    <authtype>0</authtype>
-                    <username/>
-                    <password/>
-                    <publickey/>
-                    <privatekey/>
-                    <port/>
-                    <description/>
-                    <inventory_link>0</inventory_link>
-                    <applications>
-                        <application>
-                            <name>Voltages</name>
-                        </application>
-                    </applications>
-                    <valuemap/>
-                    <logtimefmt/>
-                </item>
-                <item>
                     <name>3.3Vcc Voltage</name>
                     <type>12</type>
                     <snmp_community/>
@@ -850,12 +1882,12 @@
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>CPU Voltage</name>
+                    <name>CPU1 Voltage</name>
                     <type>12</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>ipmi.volts.cpu</key>
+                    <key>ipmi.volts.cpu1</key>
                     <delay>15</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -874,7 +1906,7 @@
                     <formula>1</formula>
                     <delay_flex/>
                     <params/>
-                    <ipmi_sensor>Vcpu</ipmi_sensor>
+                    <ipmi_sensor>Vcpu1</ipmi_sensor>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
@@ -893,12 +1925,12 @@
                     <logtimefmt/>
                 </item>
                 <item>
-                    <name>RAM Voltage</name>
+                    <name>CPU2 Voltage</name>
                     <type>12</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
                     <snmp_oid/>
-                    <key>ipmi.volts.dimm</key>
+                    <key>ipmi.volts.cpu2</key>
                     <delay>15</delay>
                     <history>90</history>
                     <trends>365</trends>
@@ -917,7 +1949,179 @@
                     <formula>1</formula>
                     <delay_flex/>
                     <params/>
-                    <ipmi_sensor>VDIMM</ipmi_sensor>
+                    <ipmi_sensor>Vcpu2</ipmi_sensor>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Voltages</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>RAM AB Voltage</name>
+                    <type>12</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>ipmi.volts.dimmab</key>
+                    <delay>15</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units>v</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor>VDIMMAB</ipmi_sensor>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Voltages</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>RAM CD Voltage</name>
+                    <type>12</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>ipmi.volts.dimmcd</key>
+                    <delay>15</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units>v</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor>VDIMMCD</ipmi_sensor>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Voltages</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>RAM EF Voltage</name>
+                    <type>12</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>ipmi.volts.dimmef</key>
+                    <delay>15</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units>v</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor>VDIMMEF</ipmi_sensor>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Voltages</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                    <logtimefmt/>
+                </item>
+                <item>
+                    <name>RAM GH Voltage</name>
+                    <type>12</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>ipmi.volts.dimmgh</key>
+                    <delay>15</delay>
+                    <history>90</history>
+                    <trends>365</trends>
+                    <status>0</status>
+                    <value_type>0</value_type>
+                    <allowed_hosts/>
+                    <units>v</units>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor>VDIMMgh</ipmi_sensor>
                     <data_type>0</data_type>
                     <authtype>0</authtype>
                     <username/>
@@ -978,6 +2182,90 @@
                     <valuemap/>
                     <logtimefmt/>
                 </item>
+                <item>
+                    <name>Power 1</name>
+                    <type>12</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>power1</key>
+                    <delay>300</delay>
+                    <history>7</history>
+                    <trends>365</trends>
+                    <status>1</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor>PS1</ipmi_sensor>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Power status</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
+                <item>
+                    <name>Power 2</name>
+                    <type>12</type>
+                    <snmp_community/>
+                    <multiplier>0</multiplier>
+                    <snmp_oid/>
+                    <key>power2</key>
+                    <delay>300</delay>
+                    <history>7</history>
+                    <trends>365</trends>
+                    <status>1</status>
+                    <value_type>3</value_type>
+                    <allowed_hosts/>
+                    <units/>
+                    <delta>0</delta>
+                    <snmpv3_contextname/>
+                    <snmpv3_securityname/>
+                    <snmpv3_securitylevel>0</snmpv3_securitylevel>
+                    <snmpv3_authprotocol>0</snmpv3_authprotocol>
+                    <snmpv3_authpassphrase/>
+                    <snmpv3_privprotocol>0</snmpv3_privprotocol>
+                    <snmpv3_privpassphrase/>
+                    <formula>1</formula>
+                    <delay_flex/>
+                    <params/>
+                    <ipmi_sensor>PS2</ipmi_sensor>
+                    <data_type>0</data_type>
+                    <authtype>0</authtype>
+                    <username/>
+                    <password/>
+                    <publickey/>
+                    <privatekey/>
+                    <port/>
+                    <description/>
+                    <inventory_link>0</inventory_link>
+                    <applications>
+                        <application>
+                            <name>Power status</name>
+                        </application>
+                    </applications>
+                    <valuemap/>
+                </item>
             </items>
             <discovery_rules/>
             <macros/>
@@ -987,7 +2275,7 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{IPMI Supermicro X10SLL-F:ipmi.volts.33vaux.last()}&lt;2.959 or {IPMI Supermicro X10SLL-F:ipmi.volts.33vaux.last()}&gt;3.554</expression>
+            <expression>{IPMI Supermicro X10DRi-T4+:ipmi.volts.33vaux.last()}&lt;2.959 or {IPMI Supermicro X10DRi-T4+:ipmi.volts.33vaux.last()}&gt;3.554</expression>
             <name>3.3v Aux Out of range</name>
             <url/>
             <status>0</status>
@@ -997,7 +2285,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{IPMI Supermicro X10SLL-F:ipmi.volts.33vcc.last()}&lt;2.959 or {IPMI Supermicro X10SLL-F:ipmi.volts.33vcc.last()}&gt;3.554</expression>
+            <expression>{IPMI Supermicro X10DRi-T4+:ipmi.volts.33vcc.last()}&lt;2.959 or {IPMI Supermicro X10DRi-T4+:ipmi.volts.33vcc.last()}&gt;3.554</expression>
             <name>3.3Vcc Out of range</name>
             <url/>
             <status>0</status>
@@ -1007,7 +2295,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{IPMI Supermicro X10SLL-F:ipmi.volts.5vcc.last()}&lt;4.487 or {IPMI Supermicro X10SLL-F:ipmi.volts.5vcc.last()}&gt;5.378</expression>
+            <expression>{IPMI Supermicro X10DRi-T4+:ipmi.volts.5vcc.last()}&lt;4.487 or {IPMI Supermicro X10DRi-T4+:ipmi.volts.5vcc.last()}&gt;5.378</expression>
             <name>5Vcc Out of range</name>
             <url/>
             <status>0</status>
@@ -1017,7 +2305,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{IPMI Supermicro X10SLL-F:ipmi.volts.12v.last()}&lt;10.784 or {IPMI Supermicro X10SLL-F:ipmi.volts.12v.last()}&gt;12.960</expression>
+            <expression>{IPMI Supermicro X10DRi-T4+:ipmi.volts.12v.last()}&lt;10.784 or {IPMI Supermicro X10DRi-T4+:ipmi.volts.12v.last()}&gt;12.960</expression>
             <name>12V Out of range</name>
             <url/>
             <status>0</status>
@@ -1027,7 +2315,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{IPMI Supermicro X10SLL-F:ipmi.volts.12vbmc.last()}&lt;1.152 or {IPMI Supermicro X10SLL-F:ipmi.volts.12vbmc.last()}&gt;1.404</expression>
+            <expression>{IPMI Supermicro X10DRi-T4+:ipmi.volts.12vbmc.last()}&lt;1.152 or {IPMI Supermicro X10DRi-T4+:ipmi.volts.12vbmc.last()}&gt;1.404</expression>
             <name>BMC voltage Out of range</name>
             <url/>
             <status>0</status>
@@ -1037,7 +2325,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{IPMI Supermicro X10SLL-F:ipmi.intrusion.chassis.last()}=0</expression>
+            <expression>{IPMI Supermicro X10DRi-T4+:ipmi.intrusion.chassis.last()}=0</expression>
             <name>Chassis Intrusion</name>
             <url/>
             <status>1</status>
@@ -1047,7 +2335,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{IPMI Supermicro X10SLL-F:ipmi.temp.cpu.last()}&gt;80</expression>
+            <expression>{IPMI Supermicro X10DRi-T4+:ipmi.temp.cpu.last()}&gt;80</expression>
             <name>CPU Temp High</name>
             <url/>
             <status>0</status>
@@ -1057,7 +2345,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{IPMI Supermicro X10SLL-F:ipmi.temp.cpu.last()}&gt;90</expression>
+            <expression>{IPMI Supermicro X10DRi-T4+:ipmi.temp.cpu.last()}&gt;90</expression>
             <name>CPU Temp Over</name>
             <url/>
             <status>0</status>
@@ -1067,7 +2355,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{IPMI Supermicro X10SLL-F:ipmi.temp.cpu.last()}&gt;88</expression>
+            <expression>{IPMI Supermicro X10DRi-T4+:ipmi.temp.cpu.last()}&gt;88</expression>
             <name>CPU Temp Very High</name>
             <url/>
             <status>0</status>
@@ -1077,7 +2365,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{IPMI Supermicro X10SLL-F:ipmi.fans.fan1.last()}&lt;100</expression>
+            <expression>{IPMI Supermicro X10DRi-T4+:ipmi.fans.fan1.last()}&lt;100</expression>
             <name>FAN 1 low</name>
             <url/>
             <status>0</status>
@@ -1087,7 +2375,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{IPMI Supermicro X10SLL-F:ipmi.fans.fan2.last()}&lt;100</expression>
+            <expression>{IPMI Supermicro X10DRi-T4+:ipmi.fans.fan2.last()}&lt;100</expression>
             <name>FAN 2 low</name>
             <url/>
             <status>0</status>
@@ -1097,7 +2385,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{IPMI Supermicro X10SLL-F:ipmi.fans.fan3.last()}&lt;100</expression>
+            <expression>{IPMI Supermicro X10DRi-T4+:ipmi.fans.fan3.last()}&lt;100</expression>
             <name>FAN 3 low</name>
             <url/>
             <status>0</status>
@@ -1107,7 +2395,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{IPMI Supermicro X10SLL-F:ipmi.fans.fana.last()}&lt;100</expression>
+            <expression>{IPMI Supermicro X10DRi-T4+:ipmi.fans.fana.last()}&lt;100</expression>
             <name>FAN A Low</name>
             <url/>
             <status>0</status>
@@ -1117,7 +2405,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{IPMI Supermicro X10SLL-F:ipmi.temp.pch.last()}&gt;90</expression>
+            <expression>{IPMI Supermicro X10DRi-T4+:ipmi.temp.pch.last()}&gt;90</expression>
             <name>PCH Temp Over</name>
             <url/>
             <status>0</status>
@@ -1127,7 +2415,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{IPMI Supermicro X10SLL-F:ipmi.volts.105vpch.last()}&lt;0.942 or {IPMI Supermicro X10SLL-F:ipmi.volts.105vpch.last()}&gt;1.194</expression>
+            <expression>{IPMI Supermicro X10DRi-T4+:ipmi.volts.105vpch.last()}&lt;0.942 or {IPMI Supermicro X10DRi-T4+:ipmi.volts.105vpch.last()}&gt;1.194</expression>
             <name>PCH voltage out of range</name>
             <url/>
             <status>0</status>
@@ -1137,7 +2425,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{IPMI Supermicro X10SLL-F:ipmi.temp.dimm1a.last()}&gt;70 or  {IPMI Supermicro X10SLL-F:ipmi.temp.dimma2.last()}&gt;70 or  {IPMI Supermicro X10SLL-F:ipmi.temp.dimmb1.last()}&gt;70 or  {IPMI Supermicro X10SLL-F:ipmi.temp.dimmb2.last()}&gt;70</expression>
+            <expression>{IPMI Supermicro X10DRi-T4+:ipmi.temp.dimm1a.last()}&gt;70 or  {IPMI Supermicro X10DRi-T4+:ipmi.temp.dimma2.last()}&gt;70 or  {IPMI Supermicro X10DRi-T4+:ipmi.temp.dimmb1.last()}&gt;70 or  {IPMI Supermicro X10DRi-T4+:ipmi.temp.dimmb2.last()}&gt;70</expression>
             <name>RAM Temp Over</name>
             <url/>
             <status>0</status>
@@ -1147,7 +2435,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{IPMI Supermicro X10SLL-F:ipmi.volts.vbat.last()}&lt;2.580 or {IPMI Supermicro X10SLL-F:ipmi.volts.vbat.last()}&gt;3.476</expression>
+            <expression>{IPMI Supermicro X10DRi-T4+:ipmi.volts.vbat.last()}&lt;2.580 or {IPMI Supermicro X10DRi-T4+:ipmi.volts.vbat.last()}&gt;3.476</expression>
             <name>VBAT Out of range</name>
             <url/>
             <status>0</status>
@@ -1157,7 +2445,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{IPMI Supermicro X10SLL-F:ipmi.volts.cpu.last()}&lt;1.395 or {IPMI Supermicro X10SLL-F:ipmi.volts.cpu.last()}&gt;1.899</expression>
+            <expression>{IPMI Supermicro X10DRi-T4+:ipmi.volts.cpu.last()}&lt;1.395 or {IPMI Supermicro X10DRi-T4+:ipmi.volts.cpu.last()}&gt;1.899</expression>
             <name>Vcpu Out of Range</name>
             <url/>
             <status>0</status>
@@ -1167,7 +2455,7 @@
             <dependencies/>
         </trigger>
         <trigger>
-            <expression>{IPMI Supermicro X10SLL-F:ipmi.volts.dimm.last()}&lt;1.200 or {IPMI Supermicro X10SLL-F:ipmi.volts.dimm.last()}&gt;1.641</expression>
+            <expression>{IPMI Supermicro X10DRi-T4+:ipmi.volts.dimm.last()}&lt;1.200 or {IPMI Supermicro X10DRi-T4+:ipmi.volts.dimm.last()}&gt;1.641</expression>
             <name>VDIMM Out of range</name>
             <url/>
             <status>0</status>
@@ -1204,7 +2492,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>IPMI Supermicro X10SLL-F</host>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
                         <key>ipmi.fans.fana</key>
                     </item>
                 </graph_item>
@@ -1216,7 +2504,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>IPMI Supermicro X10SLL-F</host>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
                         <key>ipmi.fans.fan1</key>
                     </item>
                 </graph_item>
@@ -1228,7 +2516,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>IPMI Supermicro X10SLL-F</host>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
                         <key>ipmi.fans.fan2</key>
                     </item>
                 </graph_item>
@@ -1240,7 +2528,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>IPMI Supermicro X10SLL-F</host>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
                         <key>ipmi.fans.fan3</key>
                     </item>
                 </graph_item>
@@ -1272,7 +2560,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>IPMI Supermicro X10SLL-F</host>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
                         <key>ipmi.temp.cpu</key>
                     </item>
                 </graph_item>
@@ -1284,7 +2572,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>IPMI Supermicro X10SLL-F</host>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
                         <key>ipmi.temp.peripheral</key>
                     </item>
                 </graph_item>
@@ -1296,7 +2584,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>IPMI Supermicro X10SLL-F</host>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
                         <key>ipmi.temp.system</key>
                     </item>
                 </graph_item>
@@ -1308,56 +2596,296 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>IPMI Supermicro X10SLL-F</host>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
                         <key>ipmi.temp.pch</key>
                     </item>
                 </graph_item>
                 <graph_item>
                     <sortorder>4</sortorder>
                     <drawtype>0</drawtype>
-                    <color>2774A4</color>
+                    <color>3366cc</color>
                     <yaxisside>0</yaxisside>
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>IPMI Supermicro X10SLL-F</host>
-                        <key>ipmi.temp.dimm1a</key>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
+                        <key>ipmi.temp.dimma1</key>
                     </item>
                 </graph_item>
                 <graph_item>
                     <sortorder>5</sortorder>
                     <drawtype>0</drawtype>
-                    <color>A54F10</color>
+                    <color>0066cc</color>
                     <yaxisside>0</yaxisside>
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>IPMI Supermicro X10SLL-F</host>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
                         <key>ipmi.temp.dimma2</key>
                     </item>
                 </graph_item>
                 <graph_item>
-                    <sortorder>6</sortorder>
+                    <sortorder>5</sortorder>
                     <drawtype>0</drawtype>
-                    <color>FC6EA3</color>
+                    <color>0099ff</color>
                     <yaxisside>0</yaxisside>
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>IPMI Supermicro X10SLL-F</host>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
+                        <key>ipmi.temp.dimma3</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>4</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>339966</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
                         <key>ipmi.temp.dimmb1</key>
                     </item>
                 </graph_item>
                 <graph_item>
-                    <sortorder>7</sortorder>
+                    <sortorder>5</sortorder>
                     <drawtype>0</drawtype>
-                    <color>6C59DC</color>
+                    <color>00cc66</color>
                     <yaxisside>0</yaxisside>
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>IPMI Supermicro X10SLL-F</host>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
                         <key>ipmi.temp.dimmb2</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>5</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>00ff00</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
+                        <key>ipmi.temp.dimmb3</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>4</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>996633</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
+                        <key>ipmi.temp.dimmc1</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>5</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>663300</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
+                        <key>ipmi.temp.dimmc2</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>5</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>996600</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
+                        <key>ipmi.temp.dimmc3</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>4</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>ffff00</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
+                        <key>ipmi.temp.dimmd1</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>5</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>ffff66</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
+                        <key>ipmi.temp.dimmd2</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>5</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>ffffcc</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
+                        <key>ipmi.temp.dimmd3</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>4</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>ff66ff</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
+                        <key>ipmi.temp.dimme1</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>5</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>ff00ff</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
+                        <key>ipmi.temp.dimme2</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>5</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>cc00cc</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
+                        <key>ipmi.temp.dimme3</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>4</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>00ffff</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
+                        <key>ipmi.temp.dimmf1</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>5</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>66ffff</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
+                        <key>ipmi.temp.dimmf2</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>5</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>33cccc</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
+                        <key>ipmi.temp.dimmf3</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>4</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>ff6600</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
+                        <key>ipmi.temp.dimmg1</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>5</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>ff9933</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
+                        <key>ipmi.temp.dimmg2</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>5</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>ff9900</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
+                        <key>ipmi.temp.dimmg3</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>4</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>ff00ff</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
+                        <key>ipmi.temp.dimmh1</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>5</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>ff66ff</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
+                        <key>ipmi.temp.dimmh2</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>5</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>ff99ff</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
+                        <key>ipmi.temp.dimmh3</key>
                     </item>
                 </graph_item>
             </graph_items>
@@ -1383,13 +2911,25 @@
                 <graph_item>
                     <sortorder>0</sortorder>
                     <drawtype>0</drawtype>
-                    <color>F230E0</color>
+                    <color>0000ff</color>
                     <yaxisside>0</yaxisside>
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>IPMI Supermicro X10SLL-F</host>
-                        <key>ipmi.volts.cpu</key>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
+                        <key>ipmi.volts.cpu1</key>
+                    </item>
+                </graph_item>
+                <graph_item>
+                    <sortorder>0</sortorder>
+                    <drawtype>0</drawtype>
+                    <color>009900</color>
+                    <yaxisside>0</yaxisside>
+                    <calc_fnc>2</calc_fnc>
+                    <type>0</type>
+                    <item>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
+                        <key>ipmi.volts.cpu1</key>
                     </item>
                 </graph_item>
                 <graph_item>
@@ -1400,7 +2940,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>IPMI Supermicro X10SLL-F</host>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
                         <key>ipmi.volts.105vpch</key>
                     </item>
                 </graph_item>
@@ -1412,7 +2952,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>IPMI Supermicro X10SLL-F</host>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
                         <key>ipmi.volts.12vbmc</key>
                     </item>
                 </graph_item>
@@ -1424,7 +2964,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>IPMI Supermicro X10SLL-F</host>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
                         <key>ipmi.volts.33vaux</key>
                     </item>
                 </graph_item>
@@ -1436,7 +2976,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>IPMI Supermicro X10SLL-F</host>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
                         <key>ipmi.volts.33vcc</key>
                     </item>
                 </graph_item>
@@ -1448,7 +2988,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>IPMI Supermicro X10SLL-F</host>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
                         <key>ipmi.volts.5vcc</key>
                     </item>
                 </graph_item>
@@ -1460,7 +3000,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>IPMI Supermicro X10SLL-F</host>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
                         <key>ipmi.volts.12v</key>
                     </item>
                 </graph_item>
@@ -1472,7 +3012,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>IPMI Supermicro X10SLL-F</host>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
                         <key>ipmi.volts.vbat</key>
                     </item>
                 </graph_item>
@@ -1484,7 +3024,7 @@
                     <calc_fnc>2</calc_fnc>
                     <type>0</type>
                     <item>
-                        <host>IPMI Supermicro X10SLL-F</host>
+                        <host>IPMI Supermicro X10DRi-T4+</host>
                         <key>ipmi.volts.dimm</key>
                     </item>
                 </graph_item>
